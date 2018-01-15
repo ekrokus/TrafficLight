@@ -1,0 +1,45 @@
+*{ 
+margin:0; 
+padding:0; 
+} 
+
+.container{ 
+background: black; 
+height: 350px; 
+width: 100px; 
+padding: 20px; 
+float:left; 
+margin: 20px; 
+} 
+.container > div{ 
+display: inline-block; 
+background: grey; 
+border-radius: 100%; 
+height: 100px; 
+width: 100px; 
+text-align: center; 
+position: relative; 
+margin-top:10px; 
+} 
+section#service .container > div:first-of-type{ 
+margin-left: 0px; 
+background: green; 
+} 
+section#service .container > div:last-of-type{ 
+background: red; 
+} 
+section#service .container > div:nth-of-type(2){ 
+background: yellow; 
+} 
+
+.container:nth-of-type(1):hover > div:first-of-type{ 
+background: red; 
+} 
+
+.container:nth-of-type(2):hover > div:nth-of-type(2){ 
+background: yellow; 
+} 
+
+.container:nth-of-type(3):hover > div:nth-of-type(3){ 
+background: green; 
+}
